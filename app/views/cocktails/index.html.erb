@@ -1,0 +1,31 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<h1>Cocktails</h1>
+
+<table>
+  <head>
+    <h2>
+      <p>Name</p>
+      <p colspan="3"></p>
+    </h2>
+  </head>
+
+  <tbody>
+    <% @cocktails.each do |cocktail| %>
+      <tr>
+        <td><%= cocktail.name %></td>
+        <td><%= link_to 'Show', cocktail %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New Cocktail', new_cocktail_path %>
+
+<!-- <div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div> -->
