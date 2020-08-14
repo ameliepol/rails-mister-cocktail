@@ -10,7 +10,7 @@
           <thead>
             <th>Ingredient</th>
             <th>Description</th>
-            <th>Action</th>
+            <th>Delete</th>
           </thead>
           <% @cocktail.doses.each do |dose| %>
             <tr>
@@ -30,8 +30,8 @@
     </div>
   </div>
 
-  <%= link_to "Add an ingredient",  new_cocktail_dose_path(@cocktail) %>
-  <%= link_to "Back to all cocktails", cocktails_path %>
+  <%= link_to "Add an ingredient",  new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %>
+  <%= link_to "Back to all cocktails", root_path, class: 'btn btn-warning' %>
   <!--  -->
 
 
